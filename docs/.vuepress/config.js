@@ -19,11 +19,11 @@ module.exports = {
         collapsable: true, // optional, defaults to true
         sidebarDepth: 0, // optional, defaults to 1
         children: [
-          "/components",
-          "/encryption-specs",
-          "/transactions",
+          "/intro",
+          "/swapping",
+          "/liquidity",
           "/governance",
-          "/sgx",
+	  "/faq",
         ],
       },
       {
