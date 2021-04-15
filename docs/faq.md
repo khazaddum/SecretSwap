@@ -4,7 +4,7 @@
 
 ### What is SecretSwap?
 
-Secret Swap is a protocol for creating liquidity and trading SNIP-20 tokens on Secret Network. Leveraging secret contracts, Secret Swap protects users against malicious front-running and privacy threats, provides access to cross-chain liquidity, and reduces fees relative to Ethereum.
+SecretSwap is a protocol for creating liquidity and trading SNIP-20 tokens on Secret Network. Leveraging secret contracts, SecretSwap protects users against malicious front-running and privacy threats, provides access to cross-chain liquidity, and reduces fees relative to Ethereum.
 
 ### What is Front-running?
 
@@ -20,11 +20,11 @@ First, you’ll need a Keplr wallet and some SCRT. Once completed, head over to 
 
 ### How does SecretSwap work?
 
-Secret Swap is an automated market maker (AMM) liquidity protocol. There is no orderbook, no centralized party, and no central facilitator of trade. Using Secret Contracts, the mempool of potential Secret Swap transactions are kept entirely encrypted - protecting users from front-running attacks and providing an increased level of privacy compared to traditional AMMs.
+SecretSwap is an automated market maker (AMM) liquidity protocol. There is no orderbook, no centralized party, and no central facilitator of trade. Using Secret Contracts, the mempool of potential SecretSwap transactions are kept entirely encrypted - protecting users from front-running attacks and providing an increased level of privacy compared to traditional AMMs.
 
-Each pool within Secret Swap is defined by a secret contract that includes a few functions to enable swapping tokens, adding liquidity and more. At its core each pool uses the function `x*y=k` to maintain a curve along which trades can happen.
+Each pool within SecretSwap is defined by a secret contract that includes a few functions to enable swapping tokens, adding liquidity and more. At its core each pool uses the function `x*y=k` to maintain a curve along which trades can happen.
 
-The pools keep track of reserves (liquidity) and updates those reserves every single time someone trades. Because the reserves are automatically rebalanced, a Secret Swap pool can always be used to buy or sell a token without requiring a counterparty on the other side of your trade.
+The pools keep track of reserves (liquidity) and updates those reserves every single time someone trades. Because the reserves are automatically rebalanced, a SecretSwap pool can always be used to buy or sell a token without requiring a counterparty on the other side of your trade.
 
 Note: Given the requirement to publicly update pool reserves to determine the price, an observer can see a consolidated view of changes (swaps, provide / remove liquidity) in a given block. As a result, if there’s a single transaction with the pool in a given block, it is not possible to have privacy on that transaction. With more transactions per pool in a given block, SecretSwap provides additional privacy to users.
 
@@ -36,7 +36,7 @@ Prices are determined by the amount of each secret token in a pool. The secret c
 
 In this case `x` = secret_token_0, `y` = secret_token_1, `k` = constant. For each trade, a certain amount of secret tokens are removed from the pool in exchange for adding an amount of the other secret token. To maintain k, the balances held by the secret contract are adjusted during the execution of the trade, therefore changing the price.
 
-### I saw a token was trading at X value, but when I traded on Secret Swap I got a much lower value?
+### I saw a token was trading at X value, but when I traded on SecretSwap I got a much lower value?
 
 There are 2 fees involved with a SecretSwap transaction: SecretSwap fees and Secret Network fees. SecretSwap fees are 0.3% of each swap deducted across the pairs. The fees are put back in the liquidity pool providing income for LPs of that pair. The fees can be changed in the future with decentralized governance enabled by SEFI.
 
@@ -78,7 +78,7 @@ All SecretSwap rewards and governance are based on SEFI.
 
 ### What is the difference between SEFI and SCRT when it comes to governance?
 
-SEFI is used as an application layer governance token specifically for Secret Swap parameters, developer fund spending, and application related changes. This is in contrast to SCRT, which is the native governance token of the Secret Network protocol layer.
+SEFI is used as an application layer governance token specifically for SecretSwap parameters, developer fund spending, and application related changes. This is in contrast to SCRT, which is the native governance token of the Secret Network protocol layer.
 
 ### How is the price of SEFI determined at the beginning?
 
