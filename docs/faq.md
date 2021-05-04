@@ -10,6 +10,7 @@ SecretSwap is a protocol for creating liquidity and trading SNIP-20 tokens on Se
 
 Front-running is an arbitrage strategy to make profit at someone else’s expense based on an information advantage. Front-running issue is not limited to DeFi, however the scale of the problem is amplified given the public nature of blockchains. Miners and arbitrage bots can see an order on the mempool before the order makes its way into the ledger and insert their orders with higher gas fees to be processed first. This means that the miner or the arbitrage bot can profit at the expense of a regular user. Furthermore, this arbitrage opportunity increases the gas fees of the underlying network, hurting users even more. [ Front-running problem on Ethereum DeFi costs users ~$1bn per year and millions of dollars in lost gas fees](https://explore.flashbots.net/).
 
+
 ### How does SecretSwap achieve front-running resistance?
 
 SecretSwap is a protocol to swap secret contract based tokens (SNIP-20s) on Secret Network. Given the encrypted nature of secret contracts, inputs to a transaction/contract are encrypted while they are on the mempool and cannot be frontrun by any adversary. This ensure SecretSwap protects its users and their money from front-running attacks
@@ -62,7 +63,17 @@ Users will be able to claim SEFI both on Secret Network with their [Keplr Wallet
 
 ### Who else can earn SEFI after genesis?
 
-SecretSwap LPs and SEFI stakers will begin earning SEFI after genesis. Traders on SecretSwap will also earn SEFI, though not immediately at genesis. Currently eligible pools for LP rewards are sSCRT/SEFI, sSCRT/sETH, sSCRT/sWBTC, sSCRT/sUSDT, sETH/sWBTC, sSCRT/sLINK.
+SecretSwap LPs and SEFI stakers will begin earning SEFI after genesis. Traders on SecretSwap will also earn SEFI, though not immediately at genesis. Currently eligible pools for LP rewards are:
+
+- sETH - sWBTC
+- sSCRT - SEFI
+- sSCRT - sETH
+- sSCRT - sLINK
+- sSCRT - sRSR
+- sSCRT - sRUNE
+- sSCRT - sUSDT
+- sSCRT - sWBTC
+
 
 ### Will you be able to stake SEFI at launch?
 
