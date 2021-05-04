@@ -14,7 +14,7 @@ The SecretSwap app also provides additional information about your swap:
 
 ![](price.png "price")
 
-- Route: SecretSwap features a routing engine that searches existing liquidity pools to find a path from your source token to your target token, looking to provide the best available price. This feature allows you to swap tokens even when there is no liquidity pool available for your trading pair, or the direct trading pair may have low liquidity.
+- Route: SecretSwap features a routing engine that searches existing liquidity pools to find a path from your source token to your target token, looking to provide the best available price. This feature allows you to swap tokens even when there is no liquidity pool available for your trading pair, or the direct trading pair may have low liquidity. If you hover over the question mark, the app will show you the different routes and the price each can give.
 
 ![](route.png "Route")
 
