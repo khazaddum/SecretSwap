@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Liquidity</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Liquidity</h1>
+</header>
+<h1 id="liquidity-pools">Liquidity Pools</h1>
+<p>SecretSwap is an Automated Market Maker (AMM) built on the secret smart contracts powered by the Secret Network. This technology allows the community to swap tokens without an intermediary, by pooling tokens in SecretSwap as a liquidity provider.</p>
+<p>The algorithm behind SecretSwap’s liquidity pools is called the constant product formula, <code>y * x = k</code>. Liquidity Providers (LPs) lock their tokens in a pool at a certain ratio of <code>x</code> to <code>y</code> that determines the price the pool offers to the community.</p>
+<p>To provide your SecretTokens to SecretSwap for liquidity, you use the “Provide” tab in the app. You can then pick the two tokens you wish to provide to SecretSwap as a LP. The app will show your available balance of each token, you can then enter the amount you wish to provide for one of your tokens and the app will calculate the amount of the other token that maintains the constant <code>k</code> of the pool. In cases where the liquidity pair does not exist, you get to set the ratio of the liquidity pool by the amounts of tokens you choose to provide.</p>
+<p><img src="lp1.png" title="Liquidity" /></p>
+<p>The app will report the current price for the pool if the pair exists, and will also report the portion of the total tokens in the pool that you are providing. This is important information because your rewards depend on your share of the pool. You can always look at the current status of the liquidity pool by clicking the “View Pair Analytics” link in the app, which will take you to <a href="https://secretanalytics.xyz/">SecretAnalytics</a> to look at the total amount of tokens in the pool, the pool’s volume and rewards.</p>
+<p>You will need to approve both tokens to be used by SecretSwap using the corresponding buttons and approving the transactions in Keplr. After clicking “Provide”, your tokens will be added to the liquidity pool and you will receive Liquidity Provider tokens that represent your share of the pool. In order to see your LP token balance, you will need to navigate to the “Withdraw” tab on the app and choose the liquidity pool where you added your tokens.</p>
+<p><img src="withdraw.png" title="Withdraw" /></p>
+<p>This tab will show the “View” icon if you don’t have a viewing key for your LP tokens. You can click it to create a new viewing key and the app will display the balance of your LP tokens as well as the amount of pooled SecretTokens that you can redeem if you wish to withdraw your tokens from the pool. To withdraw, you can use the slider to select the amount and then approve the transaction in your Keplr wallet.</p>
+<p><strong>Note:</strong> The amounts of SecretTokens you can redeem for your LP tokens will change over time and will not necessarily be the same amount or ratio that you originally provided.</p>
+<h2 id="rewards">Rewards</h2>
+<p>As an incentive to the community, SecretSwap has a 0.3% fee for every swap. This fee is added to the liquidity pool, giving LPs a share of these fees proportional to their share of the pool.</p>
+<p>As a further incentive, certain trading pairs have staking rewards available. Liquidity Providers can stake their LP tokens and receive <code>SEFI</code> tokens, the Secret Finance governance token, as a reward. Currently, the pairs with staking rewards available are:</p>
+<ul>
+<li>sETH - sWBTC</li>
+<li>sSCRT - SEFI</li>
+<li>sSCRT - sETH</li>
+<li>sSCRT - sLINK</li>
+<li>sSCRT - sRSR</li>
+<li>sSCRT - sRUNE</li>
+<li>sSCRT - sUSDT</li>
+<li>sSCRT - sWBTC</li>
+</ul>
+<h2 id="impermanent-loss">Impermanent Loss</h2>
+<p>This is an important concept for Liquidity Providers. By providing your tokens to the liquidity pool, you are allowing your tokens to be exchanged for one another. For example, you provide 30 <code>sDAI</code> and 10 <code>sSCRT</code> to the liquidity pool and own 100% of the pool. If the market price of <code>sSCRT</code> increases to 4 <code>sDAI</code>, arbitrageurs will buy <code>sSCRT</code> until the pool’s price reflects the market price. This removes <code>sSCRT</code> and adds <code>sDAI</code> to the pool until the pooled tokens are 35 <code>sDAI</code> and 8.6 <code>sSCRT</code>.</p>
+<p>If the LP had not provided the tokens to the pool, their original 10 <code>sSCRT</code> would now be worth $40. With the pool exchanging some of the tokens, the 8.6 <code>sSCRT</code> is now worth around $34. The difference of $6 is the impermanent loss. It is referred to as impermanent because the pool tokens are in constant flow and the amounts will continue to change. Once the LP withdraws the tokens from the pool, this loss would become permanent. This risk is why incentives are provided to compensate Liquidity Providers.</p>
+</body>
+</html>

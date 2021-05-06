@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Introduction</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Introduction</h1>
+</header>
+<h1 id="welcome-to-secretswap">Welcome to SecretSwap</h1>
+<p>SecretSwap is an automated market-making (AMM) decentralized exchange (DEX) built for trading SNIP-20 tokens (a.k.a. SecretTokens) on Secret Network. Leveraging secret contracts, SecretSwap protects users against malicious front-running and privacy threats, provides access to cross-chain liquidity through an <a href="https://bridge.scrt.network/">Ethereum bridge</a>, a Binance Smart Chain bridge (in development), a Plasm bridge (in development), and reduces fees relative to Ethereum.</p>
+<p>In order to use SecretSwap, you will need the <a href="https://wallet.keplr.app/">Keplr Wallet</a> installed on your browser and at a minimum, some <code>SCRT</code> to begin swapping.</p>
+<h2 id="scrt-vs-sscrt">SCRT vs sSCRT</h2>
+<p>The Secret Network blockchain is powered by the <code>SCRT</code> token. It can be delegated to validators to secure the network for staking rewards and it is also used to pay for network fees. This token can be purchased in centralized exchanges.</p>
+<p>SecretSwap also supports the <code>sSCRT</code> token, which is the SNIP-20 implementation of <code>SCRT</code>. This token has all the privacy features of secret smart contracts, however it cannot be used to stake or to pay network fees. <code>SCRT</code> can be swapped for <code>sSCRT</code> via the <a href="https://wallet.keplr.app/">Keplr Wallet</a> or via the main SecretSwap app.</p>
+<ul>
+<li><em>Pro tip:</em> Always keep a few un-staked <code>SCRT</code> in your wallet for network fees.</li>
+</ul>
+<h2 id="viewing-keys">Viewing Keys</h2>
+<p>The encrypted nature of the secret smart contracts that power SecretTokens and SecretSwap means that the balances on your wallet are not visible by default, even to you. In order to see these balances, you need to create the corresponding viewing keys.</p>
+<p>In the SecretSwap app, you can select a SecretToken from the drop-down and the app will check your wallet for a viewing key. If one is found, the app will show your balance, otherwise it will show a button showing “View”. Clicking this button triggers the creation of a viewing key for that SecretToken for your wallet. Keplr will prompt you to approve this creation and submit the transaction. This transaction needs a small amount of <code>SCRT</code> for network fees. Once this transaction is completed, the SecretSwap app will show your balance for that SecretToken, even if zero. Each SecretToken you wish to hold in your wallet will need a viewing key created. These keys can be copied and then imported into Keplr if you switch your wallet to a different computer.</p>
+<h2 id="bridging">Bridging</h2>
+<p>SecretSwap supports cross-chain exchanges through bridges that allow you to lock tokens from one blockchain (e.g.: Ethereum) and receive SecretToken equivalents to use in SecretSwap. The <a href="https://bridge.scrt.network/">Ethereum bridge</a> is currently available and others are in active development. The list of supported assets can be found <a href="https://bridge.scrt.network/tokens">here</a>.</p>
+<p>To use the <a href="https://bridge.scrt.network/">Ethereum bridge</a>, you will need both the <a href="https://wallet.keplr.app/">Keplr Wallet</a> and <a href="https://metamask.io">Metamask</a> wallet on your browser. The bridge will then allow you to choose if you want to move tokens from Ethereum to Secret Network, or viceversa. You can bridge <code>ETH</code> or any of the supported ERC-20 tokens to their SecretToken equivalent, keep in mind that the bridging transaction will incur Ethereum network fees.</p>
+<p>Remember to generate the appropriate viewing keys to see the balance of your freshly bridged SecretTokens.</p>
+</body>
+</html>
