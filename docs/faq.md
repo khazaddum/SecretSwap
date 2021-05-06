@@ -13,7 +13,7 @@ Front-running is an arbitrage strategy to make profit at someone else’s expens
 
 ### How does SecretSwap achieve front-running resistance?
 
-SecretSwap is a protocol to swap secret contract based tokens (SNIP-20s) on Secret Network. Given the encrypted nature of secret contracts, inputs to a transaction/contract are encrypted while they are on the mempool and cannot be frontrun by any adversary. This ensure SecretSwap protects its users and their money from front-running attacks
+SecretSwap is a protocol to swap secret contract based tokens (SNIP-20s) on Secret Network. Given the encrypted nature of secret contracts, inputs to a transaction/contract are encrypted while they are on the mempool and cannot be frontrun by any adversary. This ensures SecretSwap protects its users and their money from front-running attacks.
 
 ### How do I use SecretSwap?
 
