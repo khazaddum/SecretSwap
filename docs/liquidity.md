@@ -35,6 +35,8 @@ As a further incentive, certain trading pairs have staking rewards available. Li
 
 To stake your LP tokens, you can click on the "Earn" tab in the app and then select the particular LP token you would like to stake. The app will show you the balance of LP tokens in your wallet, the balance of LP tokens staked in the secret smart contract, if any, and your rewards balance. Here you can deposit your LP tokens, claim your rewards or withdraw any of your staked LP tokens.
 
+![](earn.png "Earn")
+
 ## Impermanent Loss
 
 This is an important concept for Liquidity Providers. By providing your tokens to the liquidity pool, you are allowing your tokens to be exchanged for one another. For example, you provide 30 `sDAI` and 10 `sSCRT` to the liquidity pool and own 100% of the pool. If the market price of `sSCRT` increases to 4 `sDAI`, arbitrageurs will buy `sSCRT` until the pool's price reflects the market price. This removes `sSCRT` and adds `sDAI` to the pool until the pooled tokens are 35 `sDAI` and 8.6 `sSCRT`.
