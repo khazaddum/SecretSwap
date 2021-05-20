@@ -4,7 +4,7 @@ all : $(PROJ_NAME)
 
 .PHONY : all
 
-$(PROJ_NAME) : intro.html swapping.html liquidity.html faq.html governance.html glossary.html
+$(PROJ_NAME) : intro.html swapping.html liquidity.html faq.html governance.html glossary.html factory.html
 	echo "Updated samples"
 
 intro.html : intro.md
@@ -24,6 +24,9 @@ governance.html : governance.md
 
 glossary.html : glossary.md
 	pandoc -s glossary.md --metadata title="Glossary" -o $@
+
+factory.html : factory.md
+	pandoc -s factory.md --metadata title="Factory" -o $@
 
 clean:
 	rm *.html
