@@ -19,4 +19,57 @@ Instantiate pair from uploaded WASM binary.
 }
 ```
 
+## Query
+
+## Config
+
+```json
+{
+    "config": {}
+}
+```
+
+### Pair
+
+```json
+{
+    "pair": {
+        "asset_infos": [
+            {
+                "token": {
+                    "contract_addr": "<HumanAddr>"
+                }
+            },
+            {
+                "native_token": {
+                    "denom": "uscrt"
+                }
+            }
+        ]
+    }
+}
+```
+
+### Pairs
+
+```json
+{
+    "pairs": {
+        "start_after": [ //optional
+            {
+                "token": {
+                    "contract_addr": "<HumanAddr>"
+                }
+            },
+            {
+                "native_token": {
+                    "denom": "uscrt"
+                }
+            }
+        ],
+        "limit": 10 //optional, default=10, max=30
+    }
+}
+```
+
 
