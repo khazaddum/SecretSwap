@@ -2,10 +2,9 @@
 
 ## Factory
 
-- Token code id:
-- Pair code id:
+- Pair code id: 13
 - Factory code id:
-- Factory contract address: `secret...`
+- Factory contract address: `secret1fjqlk09wp7yflxx7y433mkeskqdtw3yqerkcgp`
 
 ## Pairs
 
@@ -29,9 +28,21 @@
 - sSCRT-SEFI: `secret1rgky3ns9ua09rt059049yl0zqf3xjqxne7ezhp`
 - sSCRT-sSIENNA: `secret1rxrg8mp4qm5703ccz26lgh8hx7gpnkujrn6qcr`
 - sSCRT-sSNX: `secret12um5gxf2vdm6vy4q36jcxlg9mc60y6wgewwxx9`
-- sSCRT-sSUSHI: 
+- sSCRT-sSUSHI: `secret1m79q9hnz44xtndmlrd9p57tt6z3kjeecp7957u`
+- sSCRT-sTORN: `secret14v3p9xq0353fvwrhkjyv4c96vrujjvzwmqyq0k`
+- sSCRT-sTUSD: `secret103e3kt05rt89fayp9y7w44wj4x3k5zumy6cdyc`
+- sSCRT-sUNI: `secret1pmt7ncuhau2g7h9snygx2tlkzqnks3uz5edgyc`
+- sSCRT-sUNILP-WSCRT-ETH: `secret1v82egg9xtycsaz0h3nqay0saq0dv296z4swjku`
+- sSCRT-sUSDC: `secret1uakhxh3qwe2k8khww709cpxlm8kmwapufmfrr0`
+- sSCRT-sUSDT: `secret1gyct75dc2pf20vtj3l86k2jxg79mffyh9ljve3`
+- sSCRT-sWBTC: `secret10x0k62eaal4q3t9c200qvmgftahxjqvdawn69c`
+- sSCRT-sYFI: `secret1zra95h6nf4kc49x59x66t7crxxl79hr5nph882`
+
 
 ## Liquidity Pool token contracts
+
+- LP-sSCRT-sAAVE: `secret1k6ypx2hv28yd73c9ethamru48ke9vetqrjzu26`
+
 
 # Testnet
 

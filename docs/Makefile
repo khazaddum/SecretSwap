@@ -26,19 +26,19 @@ glossary.html : glossary.md
 	pandoc -s glossary.md --metadata title="Glossary" -o $@
 
 factory.html : factory.md
-	pandoc -s factory.md --metadata title="Factory" -o $@
+	pandoc -s factory.md --highlight-style="tango" --metadata title="Factory" -o $@
 
 newpair.html : newpair.md
-	pandoc -s newpair.md --metadata title="How to Create New Pair" -o $@
+	pandoc -s newpair.md --highlight-style="tango" --metadata title="How to Create New Pair" -o $@
 
 query.html : query.md
-	pandoc -s query.md --metadata title="Query" -o $@
+	pandoc -s query.md --highlight-style="tango" --metadata title="Query" -o $@
 
 pair.html : pair.md
-	pandoc -s pair.md --metadata title="Pair" -o $@
+	pandoc -s pair.md --highlight-style="tango" --metadata title="Pair" -o $@
 
 contracts.html : contracts.md
-	pandoc -s contracts.md --metadata title="Contract Addresses" -o $@
+	pandoc -s contracts.md --highlight-style="tango" --metadata title="Contract Addresses" -o $@
 
 clean:
 	rm *.html

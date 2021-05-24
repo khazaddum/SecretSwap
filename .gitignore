@@ -16,3 +16,4 @@ target/
 .cargo-ok
 
 build/
+/docs/secretswap_pairs.json
